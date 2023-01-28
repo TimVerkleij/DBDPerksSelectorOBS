@@ -1,4 +1,4 @@
-const channel = 'blastbucketgaming'
+const channel = 'strayvixx'
 
 function heartbeat() {
     ws.send("PING")
@@ -36,25 +36,25 @@ function connect() {
         } else {
             const userMessage = eventData.split(':')[2].toLowerCase()
 
-            if(userMessage.startsWith("perk 1")) {
+            if (userMessage.startsWith("perk 1")) {
                 const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 1", ""))
                 document.getElementById(`perk1`).src = baseURL + perk.img + '.png'
-            } else if(userMessage.startsWith("perk 2")) {
+            } else if (userMessage.startsWith("perk 2")) {
                 const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 2", ""))
                 document.getElementById(`perk2`).src = baseURL + perk.img + '.png'
-            } else if(userMessage.startsWith("perk 3")) {
+            } else if (userMessage.startsWith("perk 3")) {
                 const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 3", ""))
                 document.getElementById(`perk3`).src = baseURL + perk.img + '.png'
-            } else if(userMessage.startsWith("perk 4")) {
+            } else if (userMessage.startsWith("perk 4")) {
                 const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 4", ""))
                 document.getElementById(`perk4`).src = baseURL + perk.img + '.png'
             }
 
-            if(userMessage.startsWith("!resetperks") && message[0].split("!")[0] === `:${channel}`) {
+            if (userMessage.startsWith("!resetperks") && (message[0].split("!")[0] === `:${channel}` || message[0].split("!")[0] === `:blastbucketgaming`)) {
                 resetPerks()
             }
         }
@@ -83,23 +83,26 @@ function getPerk(perkName) {
     const possiblePerks = []
     perks.forEach(perk => {
         let currentPerk = perk.name
-        if(perk.name.startsWith("Scourge Hook: ")) {
+        if (perk.name.startsWith("Scourge Hook: ")) {
             currentPerk = perk.name.replace("Scourge Hook: ", "")
         } else if (perk.name.startsWith("Hex:")) {
             currentPerk = perk.name.replace("Hex: ", "")
         }
         const result = trigramIndex([perkName, currentPerk])
-        if(result > 50) {
-            possiblePerks.push({
-                name: perk.name,
-                match: result,
-                img: perk.img
-            })
+        if (result > 50) {
+            if (perk.role === "Killer") {
+                possiblePerks.push({
+                    name: perk.name,
+                    match: result,
+                    img: perk.img
+                })
+            }
+
         }
 
     })
 
-    if(possiblePerks.length === 1) {
+    if (possiblePerks.length === 1) {
         return {
             name: possiblePerks[0].name,
             match: possiblePerks[0].match,
