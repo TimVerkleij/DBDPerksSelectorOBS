@@ -7,12 +7,20 @@
         <title>Document</title>
     </head>
     <body>
-        <iframe class="iframe" src="" id="perk1"></iframe>
-        <iframe class="iframe" src="" id="perk2"></iframe>
-        <iframe class="iframe" src="" id="perk3"></iframe>
-        <iframe class="iframe" src="" id="perk4"></iframe>
+        <div class="perks">
+            <img src="./images/perk template.png" class="perkTemplate" alt="">
+            <img src="./images/perk template.png" class="perkTemplate" alt="">
+            <img src="./images/perk template.png" class="perkTemplate" alt="">
+            <img src="./images/perk template.png" class="perkTemplate" alt="">
+        </div>
+        <div class="perks">
+            <iframe class="iframe" src="" id="perk1"></iframe>
+            <iframe class="iframe" src="" id="perk2"></iframe>
+            <iframe class="iframe" src="" id="perk3"></iframe>
+            <iframe class="iframe" src="" id="perk4"></iframe>
+        </div>
         <!-- <img src="https://assets.nightlight.gg/img/perks/Kenya/discordance.png" alt="" id="perk2"> -->
-        <!-- <iframe src="https://assets.nightlight.gg/img/perks/Kenya/discordance.png" frameborder="0"></iframe> -->
+    <!-- <iframe src="https://assets.nightlight.gg/img/perks/Kenya/discordance.png" frameborder="0"></iframe> -->
         <!-- <img src="" alt="" id="perk3"> -->
         <!-- <img src="" alt="" id="perk4"> -->
     </body>
@@ -28,7 +36,25 @@
         border: none;
         overflow: hidden;
         overflow-y: hidden;
-        float:left;
+        float: left;
+        padding: 0;
+        margin: 0;
+        margin-right: -50px;
+    }
+
+    .perkTemplate {
+        width: 250px;
+        height: 250px;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .perks {
+        width: 100%;
+        height: 300px;
+        position: fixed;
+        float: left;
         padding: 0;
         margin: 0;
     }
