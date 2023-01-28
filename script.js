@@ -69,7 +69,6 @@ function connect() {
                 document.getElementById(`perk4`).src = baseURL + perk.img + '.png'
             }
 
-            console.log(message)
             if(userMessage.startsWith("!resetperks") && message[0].split("!")[0] === `:${channel}}`) {
                 resetPerks()
             }
