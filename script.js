@@ -50,6 +50,7 @@ function connect() {
             return
         } else {
             const userMessage = eventData.split(':')[2].toLowerCase()
+
             if(userMessage.startsWith("perk 1")) {
                 const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 1", ""))
@@ -67,6 +68,11 @@ function connect() {
                 const perk = getPerk(userMessage.replace("perk 4", ""))
                 document.getElementById(`perk4`).src = baseURL + perk.img + '.png'
             }
+
+            console.log(message)
+            if(userMessage.startsWith("!resetperks") && message[0].split("!")[0] === `:${channel}}`) {
+                resetPerks()
+            }
         }
 
     };
@@ -78,6 +84,15 @@ function connect() {
     };
 
 }
+
+function resetPerks() {
+    document.getElementById(`perk1`).src = ""
+    document.getElementById(`perk2`).src = ""
+    document.getElementById(`perk3`).src = ""
+    document.getElementById(`perk4`).src = ""
+}
+
+resetPerks()
 
 
 function getPerk(perkName) {
