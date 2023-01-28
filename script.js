@@ -1,19 +1,4 @@
-const channel = 'strayvixx'
-const obs = new OBSWebSocket()
-
-const URL = '192.168.1.127'
-const PORT = 4455
-const password = '3NseeLRhNBBqNJcS'
-
-async function connectToOBS() {
-    try {
-        await obs.connect(`ws://${URL}:${PORT}`, password)
-        console.log(`Success! We're connected & authenticated.`)
-    } catch (err) {
-        console.log(err)
-    }
-
-}
+const channel = 'blastbucketgaming'
 
 function heartbeat() {
     ws.send("PING")
@@ -69,7 +54,7 @@ function connect() {
                 document.getElementById(`perk4`).src = baseURL + perk.img + '.png'
             }
 
-            if(userMessage.startsWith("!resetperks") && message[0].split("!")[0] === `:${channel}}`) {
+            if(userMessage.startsWith("!resetperks") && message[0].split("!")[0] === `:${channel}`) {
                 resetPerks()
             }
         }
@@ -155,5 +140,4 @@ function trigramIndex(inputPhrases) {
     return parseInt(numberOfMatches / trigrams[1].length * 100)
 }
 
-connectToOBS()
 connect()
