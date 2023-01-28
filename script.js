@@ -1,4 +1,4 @@
-const channel = 'blastbucketgaming'
+const channel = 'strayvixx'
 const obs = new OBSWebSocket()
 
 const URL = '192.168.1.127'
