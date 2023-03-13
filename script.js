@@ -82,24 +82,44 @@ resetPerks()
 function getPerk(perkName) {
     const possiblePerks = []
     perks.forEach(perk => {
-        let currentPerk = perk.name
-        if (perk.name.startsWith("Scourge Hook: ")) {
-            currentPerk = perk.name.replace("Scourge Hook: ", "")
-        } else if (perk.name.startsWith("Hex:")) {
-            currentPerk = perk.name.replace("Hex: ", "")
-        }
-        const result = trigramIndex([perkName, currentPerk])
-        if (result > 50) {
-            if (perk.role === "Killer") {
-                possiblePerks.push({
-                    name: perk.name,
-                    match: result,
-                    img: perk.img
-                })
+        if (typeof perk.name === "object") {
+            for (let currentPerk of perk.name) {
+                if (currentPerk.startsWith("Scourge Hook: ")) {
+                    currentPerk = currentPerk.replace("Scourge Hook: ", "")
+                } else if (currentPerk.startsWith("Hex:")) {
+                    currentPerk = currentPerk.replace("Hex: ", "")
+                }
+                const result = trigramIndex([perkName, currentPerk])
+                if (result > 50) {
+                    if (perk.role === "Killer") {
+                        possiblePerks.push({
+                            name: perk.name,
+                            match: result,
+                            img: perk.img
+                        })
+                    }
+        
+                }
             }
-
+        } else {
+            let currentPerk = perk.name
+            if (perk.name.startsWith("Scourge Hook: ")) {
+                currentPerk = perk.name.replace("Scourge Hook: ", "")
+            } else if (perk.name.startsWith("Hex:")) {
+                currentPerk = perk.name.replace("Hex: ", "")
+            }
+            const result = trigramIndex([perkName, currentPerk])
+            if (result > 50) {
+                if (perk.role === "Killer") {
+                    possiblePerks.push({
+                        name: perk.name,
+                        match: result,
+                        img: perk.img
+                    })
+                }
+    
+            }
         }
-
     })
 
     if (possiblePerks.length === 1) {

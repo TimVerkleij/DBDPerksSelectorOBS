@@ -1,6 +1,6 @@
 const perks = [{
     "id": "48",
-    "name": "A Nurse's Calling",
+    "name": ["A Nurse's Calling", "nurses"],
     "url": "/perks/A_Nurse%27s_Calling",
     "role": "Killer",
     "img": "aNursesCalling",
@@ -32,7 +32,7 @@ const perks = [{
     "description": "\u003cp\u003eUnlocks potential in one's aura reading ability.\u003c/p\u003e\u003cp\u003eYou see the aura of every Survivor that:\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003eYou rescue from a hook, or rescues you from a hook;\u003c/li\u003e\u003cli\u003eYou complete a healing action on, or completes a healing action on you.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e\u003cp\u003eThey also see your aura.\u003c/p\u003e\u003cp\u003eThis occurs for up to \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e1\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e2\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e3\u003c/span\u003e Survivors\u003c/span\u003e. All effects of \u003ci\u003eAftercare\u003c/i\u003e are reset when you are hooked by The Killer.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“A Mercy that Rips the Storm.”\u003cbr\u003eOil work to honor my best buddies who happen to be the best musicians I know. Their first album is still my favorite. It got me through a dark time in my life. –Jeff, oil on canvas, 16x16\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "39",
-    "name": "Agitation",
+    "name": ["Agitation","agi", "aggi"],
     "url": "/perks/Agitation",
     "role": "Killer",
     "img": "agitation",
@@ -88,7 +88,7 @@ const perks = [{
     "description": "\u003cp\u003eYour agility is incomparable.\u003c/p\u003e\u003cp\u003eAfter falling from a height, cat-like reflexes reduce your stagger duration from falling by \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e75\u003c/span\u003e%\u003c/span\u003e and reduce the volume of grunts from falling by \u003cspan class=\"Highlight1\"\u003e100%\u003c/span\u003e. You start sprinting at \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e150\u003c/span\u003e%\u003c/span\u003e your normal running speed for a maximum of \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e3\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp\u003eCauses the \u003cb\u003eExhausted\u003c/b\u003e status effect for \u003cspan class=\"Highlight4\"\u003e\u003cspan class=\"tunable level-1\"\u003e60\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e50\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e40\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp\u003e\u003ci\u003eBalanced Landing\u003c/i\u003e cannot be used while \u003cb\u003eExhausted\u003c/b\u003e.\u003c/p\u003e\u003cp\u003eYou do not recover from the \u003cb\u003eExhausted\u003c/b\u003e status effect while running.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"I've jumped from higher places.\" -Nea\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "96",
-    "name": "Bamboozle",
+    "name": ["Bamboozle", "bam bam", "bambam", "bam"],
     "url": "/perks/Bamboozle",
     "role": "Killer",
     "img": "Guam/bamboozle",
@@ -96,7 +96,7 @@ const perks = [{
     "description": "\u003cp\u003eYour vault speed is \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e5\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e10\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e15\u003c/span\u003e%\u003c/span\u003e faster.\u003c/p\u003e\u003cp\u003ePerforming a vault action calls upon The Entity to block that vault location for \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e8\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e12\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e16\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp\u003eOnly 1 vault location may be blocked in this way at any time. The vault location is blocked only for Survivors. \u003c/p\u003e\u003cp\u003eDoes not affect pallets.\u003c/p\u003e"
   }, {
     "id": "81",
-    "name": "Barbecue \u0026 Chili",
+    "name": ["Barbecue \u0026 Chili", "BBQ"],
     "url": "/perks/Barbecue_\u0026_Chili",
     "role": "Killer",
     "img": "Cannibal/BBQAndChili",
@@ -320,7 +320,7 @@ const perks = [{
     "description": "\u003cp\u003eYou quickly analyze problems and correct other's work when they make a mistake.\u003c/p\u003e\u003cp\u003eYou start the trial with \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e1\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e2\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e3\u003c/span\u003e token(s)\u003c/span\u003e and gain a token, up to a maximum of \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e5\u003c/span\u003e\u003c/span\u003e, for every great Skill Check.\u003c/p\u003e\u003cp\u003eWhen a Survivor fails a Normal Skill Check while cooperating with you, 1 token is consumed and their failed Skill Check becomes a good Skill Check.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"Can't hurt to have another set of eyes on the problem.\" —Jonah Vasquez\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "114",
-    "name": "Corrupt Intervention",
+    "name": ["Corrupt Intervention", "corrupt", "cockblock"],
     "url": "/perks/Corrupt_Intervention",
     "role": "Killer",
     "img": "Mali/corruptIntervention",
@@ -696,7 +696,7 @@ const perks = [{
     "description": "\u003cp\u003eA Hex that ensures those lesser than you are properly herded.\u003c/p\u003e\u003cp\u003eThe Entity blocks a window for\u003cspan class=\"Highlight1\"\u003e \u003cspan class=\"tunable level-1\"\u003e14\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e17\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e20\u003c/span\u003e seconds\u003c/span\u003e after a Survivor performs a \u003cb\u003erushed\u003c/b\u003e vault through it.\u003c/p\u003e\u003cp\u003e\u003ci\u003eThe Hex effects persist as long as the related Hex Totem is standing.\u003c/i\u003e\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"You have no control. People like you never did.\" — Ji-Woon Hak\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "60",
-    "name": "Hex: Devour Hope",
+    "name": ["Hex: Devour Hope", "devour"],
     "url": "/perks/Hex:_Devour_Hope",
     "role": "Killer",
     "img": "DLC3/devourHope",
@@ -728,7 +728,7 @@ const perks = [{
     "description": "\u003cp\u003eA Hex rooting its power in despair. Your hunt is an irresistible song of dread which muddles your prey's attention.\u003c/p\u003e\u003cp\u003eSurvivors receive a \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e2\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e4\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e6\u003c/span\u003e%\u003c/span\u003e regression penalty when missing a Skill Check while healing or repairing.\u003c/p\u003e\u003cp\u003eEach time a Survivor is hooked, Huntress Lullaby grows in power. It affects healing and repairing Skill Check warnings:\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003e1 to 4 Tokens:\u003c/b\u003e Time between the Skill Check warning sound and the Skill Check becomes shorter.\u003c/li\u003e\u003cli\u003e\u003cb\u003e5 Tokens:\u003c/b\u003e No Skill Check warning.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e\u003cp\u003e\u003ci\u003eThe Hex effects persist as long as the related Hex Totem is standing.\u003c/i\u003e\u003c/p\u003e"
   }, {
     "id": "18",
-    "name": "Hex: No One Escapes Death",
+    "name": ["Hex: No One Escapes Death", "noed"],
     "url": "/perks/Hex:_No_One_Escapes_Death",
     "role": "Killer",
     "img": "noOneEscapesDeath",
@@ -1176,7 +1176,7 @@ const perks = [{
     "description": "\u003cp\u003eAchieving goals boosts your confidence.\u003c/p\u003e\u003cp\u003eAfter a generator is completed, you leave no scratch marks for \u003cspan class=\"Highlight1\"\u003e \u003cspan class=\"tunable level-1\"\u003e6\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e8\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e10\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“Ok, stay calm. Don't overthink it and just keep moving forward: you got this. –Jane Romero\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "98",
-    "name": "Pop Goes the Weasel",
+    "name": ["Pop Goes the Weasel", "pop"],
     "url": "/perks/Pop_Goes_the_Weasel",
     "role": "Killer",
     "img": "Guam/popGoesTheWeasel",
@@ -1336,7 +1336,7 @@ const perks = [{
     "description": "\u003cp\u003eUnlocks potential in one's aura reading ability.\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003eSee hook auras in a \u003cspan class=\"Highlight1\"\u003e56 meter\u003c/span\u003e radius from the pickup spot if a Survivor is being carried. Scourge Hooks are shown in yellow.\u003c/li\u003e\u003cli\u003eUnlocks the ability to sabotage hooks without a Toolbox.\u003c/li\u003e\u003cli\u003eSabotaging a hook without a Toolbox takes \u003cspan class=\"Highlight2\"\u003e2.5 seconds\u003c/span\u003e.\u003c/li\u003e\u003cli\u003eThe sabotage action has a \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e90\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e75\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e60\u003c/span\u003e second\u003c/span\u003e cooldown.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e"
   }, {
     "id": "56",
-    "name": "Save the Best for Last",
+    "name": ["Save the Best for Last", "stbfl"],
     "url": "/perks/Save_the_Best_for_Last",
     "role": "Killer",
     "img": "DLC2/saveTheBestForLast",
@@ -1368,7 +1368,7 @@ const perks = [{
     "description": "\u003cp\u003eYour fervent care of the hooks found in the basement have aroused The Entity's interest.\u003c/p\u003e\u003cp\u003eAt the start of the trial, up to \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e4\u003c/span\u003e\u003c/span\u003e random hooks are changed into scourge hooks. You see their auras in white.\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003eScourge Hooks grant \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e10\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e15\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e20\u003c/span\u003e%\u003c/span\u003e faster Entity progression if the Killer is not within \u003cspan class=\"Highlight3\"\u003e24 meters\u003c/span\u003e.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e\u003cp\u003eBasement hooks count as Scourge Hooks.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"Then you will know that there is no escape. When hanging in the depths, you face the dark one.\"\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "190",
-    "name": "Scourge Hook: Pain Resonance",
+    "name": ["Scourge Hook: Pain Resonance", "pain res"],
     "url": "/perks/Scourge_Hook:_Pain_Resonance",
     "role": "Killer",
     "img": "Ion/painResonance",
@@ -1440,7 +1440,7 @@ const perks = [{
     "description": "\u003cp\u003eYou have developed an efficient way to get off hooks.\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003eGrants up to \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e3\u003c/span\u003e\u003c/span\u003e extra escape attempts on the hook.\u003c/li\u003e\u003cli\u003eHook escape attempts have a \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e2\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e3\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e4\u003c/span\u003e%\u003c/span\u003e increased chance to succeed.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e"
   }, {
     "id": "22",
-    "name": "Sloppy Butcher",
+    "name": ["Sloppy Butcher", "sloppy"],
     "url": "/perks/Sloppy_Butcher",
     "role": "Killer",
     "img": "sloppyButcher",
@@ -1600,7 +1600,7 @@ const perks = [{
     "description": "\u003cp\u003eUnlocks potential in one's aura reading ability. Survivors' auras are revealed to you for \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e3\u003c/span\u003e seconds\u003c/span\u003e when they enter the basement and you are more than \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e32\u003c/span\u003e meters\u003c/span\u003e away from the basement entrance.\u003c/p\u003e\u003cp\u003e\u003ci\u003eTerritorial Imperative\u003c/i\u003e can only be triggered once every \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e30\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e25\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e20\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e"
   }, {
     "id": "50",
-    "name": "Thanatophobia",
+    "name": ["Thanatophobia", "thana"],
     "url": "/perks/Thanatophobia",
     "role": "Killer",
     "img": "thatanophobia",
