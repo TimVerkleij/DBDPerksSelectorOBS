@@ -392,7 +392,7 @@ const perks = [{
     "description": "\u003cp\u003eActivatable perk.\u003c/p\u003e\u003cp\u003eYou can take a beating. When injured, tap into your adrenaline bank to avoid incoming damage.\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003ePress the \u003ci\u003eActive Ability\u003c/i\u003e button while running to gain the Endurance status effect for the next \u003cspan class=\"Highlight1\"\u003e0.5 seconds\u003c/span\u003e.\u003c/li\u003e\u003cli\u003eCauses the \u003ci\u003eExhausted\u003c/i\u003e status effect for \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e60\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e50\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e40\u003c/span\u003e seconds\u003c/span\u003e.\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e\u003cp\u003e\u003cspan class=\"ReminderText\"\u003eExhausted prevents survivors from activating exhausting perks.\u003c/span\u003e\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“We were walkin' through t'ginnel one night when a beer bottle flew past me, then another, and another. I thought to myself, “Gonna 'ave some fun ‘ere lads, let's get stuck in!” It were a right dust up, I swear down!” -David King\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "141",
-    "name": "Dead Man's Switch",
+    "name": ["Dead Man's Switch", "DMS"],
     "url": "/perks/Dead_Man%27s_Switch",
     "role": "Killer",
     "img": "Ukraine/deadManSwitch",
@@ -1344,7 +1344,7 @@ const perks = [{
     "description": "\u003cp\u003eYou become \u003cb\u003eobsessed\u003c/b\u003e with one Survivor.\u003c/p\u003e\u003cp\u003eEarn a token for each successful \u003ci\u003ebasic attack\u003c/i\u003e that is not dealt to the Obsession. \u003c/p\u003e\u003cp\u003eEach Token grants a stackable \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e5\u003c/span\u003e%\u003c/span\u003e decreased successful \u003ci\u003ebasic attack\u003c/i\u003e cooldown, you can earn up to \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e8\u003c/span\u003e\u003c/span\u003e tokens.\u003c/p\u003e\u003cp\u003eHitting your Obsession with a \u003ci\u003ebasic attack\u003c/i\u003e will cause you to lose \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e4\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e3\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e2\u003c/span\u003e\u003c/span\u003e tokens. \u003c/p\u003e\u003cp\u003eYou can no longer gain tokens if your Obsession is sacrificed or killed.\u003c/p\u003e\u003cp\u003e\u003cul\u003e\u003cli\u003e\u003ci\u003eThe Killer can only be \u003cb\u003eobsessed\u003c/b\u003e with one Survivor at a time.\u003c/i\u003e\u003c/li\u003e\u003c/ul\u003e\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"Death has come to your little town, sheriff.\" -Dr. Sam Loomis\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "195",
-    "name": "Scourge Hook: Floods of Rage",
+    "name": ["Scourge Hook: Floods of Rage", "floods"],
     "url": "/perks/Scourge_Hook:_Floods_of_Rage",
     "role": "Killer",
     "img": "Kepler/floodOfRage",
