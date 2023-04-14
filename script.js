@@ -35,21 +35,18 @@ function connect() {
             return
         } else {
             const userMessage = eventData.split(':')[2].toLowerCase()
+            const baseURL = 'https://assets.nightlight.gg/img/perks/'
 
             if (userMessage.startsWith("perk 1")) {
-                const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 1", ""))
                 document.getElementById(`perk1`).src = baseURL + perk.img + '.png'
             } else if (userMessage.startsWith("perk 2")) {
-                const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 2", ""))
                 document.getElementById(`perk2`).src = baseURL + perk.img + '.png'
             } else if (userMessage.startsWith("perk 3")) {
-                const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 3", ""))
                 document.getElementById(`perk3`).src = baseURL + perk.img + '.png'
             } else if (userMessage.startsWith("perk 4")) {
-                const baseURL = 'https://assets.nightlight.gg/img/perks/'
                 const perk = getPerk(userMessage.replace("perk 4", ""))
                 document.getElementById(`perk4`).src = baseURL + perk.img + '.png'
             }
