@@ -944,7 +944,7 @@ const perks = [{
     "description": "\u003cp\u003eUnlocks potential in one's aura reading ability.\u003c/p\u003e\u003cp\u003eIf you are the last Survivor remaining in the Trial, you can see the aura of the Hatch within a \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e24\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e28\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e32\u003c/span\u003e meter\u003c/span\u003e range.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e\"I'm not horseshittin' around. I'm doing this alone!\" -Bill\u003c/span\u003e\u003c/p\u003e"
   }, {
     "id": "171",
-    "name": "Lethal Pursuer",
+    "name": ["Lethal Pursuer", "Lethal"],
     "url": "/perks/Lethal_Pursuer",
     "role": "Killer",
     "img": "Eclipse/lethalPursuer",
