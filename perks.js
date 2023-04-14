@@ -1750,4 +1750,28 @@ const perks = [{
     "img": "Sweden/zanshinTactics",
     "character": "The Oni",
     "description": "\u003cp\u003eUnlocks potential in one's aura reading ability. You are mentally alert and aware of key points on the battlefield.\u003c/p\u003e\u003cp\u003eThe auras of all pallets, breakable walls, and vault locations are revealed to you within a \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e24\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e28\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e32\u003c/span\u003e meter\u003c/span\u003e range.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“Within your enemy's strength is weakness.” -Renjiro's Doctrine 12:5\u003c/span\u003e\u003c/p\u003e"
-  }]
+  }, {
+    "id": "226",
+    "name": "Game Afoot",
+    "url": "/perks/Game_Afoot",
+    "role": "Killer",
+    "img": "Saturn/gameAfoot",
+    "character": "The Skull Merchant",
+    "description": "\u003cp\u003eFirst you pick your prey. Then you pick it apart.\u003c/p\u003e\u003cp\u003eWhile you are chasing the Obsession, this perk activates.\u003c/p\u003e\u003cp\u003eDamaging generators and breaking walls or pallets gives you a \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e5\u003c/span\u003e%\u003c/span\u003e Haste Status for \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e8\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e9\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e10\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp\u003eWhenever you hit the Survivor with the total most time in chase with a basic attack, they become the obsession.\u003c/i\u003e\u003c/p\u003e\u003cp\u003e\u003cspan class=\"ReminderText\"\u003eThe Killer can only be \u003cb\u003eobsessed\u003c/b\u003e with one Survivor at a time.\u003c/span\u003e\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“This one might actually be a challenge... ” – Adriana Imai\u003c/span\u003e\u003c/p\u003e"
+}, {
+  "id": "228",
+  "name": "Leverage",
+  "url": "/perks/Leverage",
+  "role": "Killer",
+  "img": "Saturn/leverage",
+  "character": "The Skull Merchant",
+  "description": "\u003cp\u003eLike in business, you profit most when those around you suffer most. \u003c/p\u003e\u003cp\u003eEach time you hook a Survivor, gain \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e1\u003c/span\u003e token\u003c/span\u003e, up to \u003cspan class=\"Highlight2\"\u003e\u003cspan class=\"tunable level-1\"\u003e10\u003c/span\u003e\u003c/span\u003e.\u003c/p\u003e\u003cp\u003eWhen you hook a Survivor, this perk activates. For each token, reduces the speed at which Survivors heal by \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e3\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e4\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e5\u003c/span\u003e%\u003c/span\u003e for \u003cspan class=\"Highlight4\"\u003e\u003cspan class=\"tunable level-1\"\u003e30\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“The best way to raise profit is to cut expenditures. Cut everything.” – Adriana Imai\u003c/span\u003e\u003c/p\u003e"
+}, {
+  "id": "227",
+  "name": "THWACK!",
+  "url": "/perks/THWACK!",
+  "role": "Killer",
+  "img": "Saturn/thwack",
+  "character": "The Skull Merchant",
+  "description": "\u003cp\u003eYour prey is terrified by your relentless pursuit.\u003c/p\u003e\u003cp\u003eAfter hooking a Survivor, the next breakable wall or pallet you break will make Survivors within \u003cspan class=\"Highlight1\"\u003e\u003cspan class=\"tunable level-1\"\u003e32\u003c/span\u003e meters\u003c/span\u003e scream and reveal their aura for \u003cspan class=\"Highlight2\"\u003e\u003cspan class=z\"tunable level-1z\"\u003e4\u003c/span\u003e seconds\u003c/span\u003e.\u003c/p\u003e\u003cp\u003e\u003ci\u003eTHWACK!\u003c/i\u003e is active for \u003cspan class=\"Highlight3\"\u003e\u003cspan class=\"tunable level-1\"\u003e45\u003c/span\u003e/\u003cspan class=\"tunable level-2\"\u003e60\u003c/span\u003e/\u003cspan class=\"tunable level-3\"\u003e75\u003c/span\u003e seconds\u003c/span\u003e after the Survivor is hooked.\u003c/p\u003e\u003cp class=\"flavor\"\u003e\u003cspan class=\"FlavorText\"\u003e“All those who stood in her path feared her mighty THWACK!” –Sonhadores Sombrios, Issue #3\u003c/span\u003e\u003c/p\u003e"
+}]
