@@ -35,7 +35,7 @@ function connect() {
             return
         } else {
             const userMessage = eventData.split(':')[2].toLowerCase()
-            const baseURL = 'https://assets.nightlight.gg/img/perks/'
+            const baseURL = 'https://cdn.nightlight.gg/img/perks/'
 
             if (userMessage.startsWith("perk 1")) {
                 const perk = getPerk(userMessage.replace("perk 1", ""))
